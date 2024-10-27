@@ -7,6 +7,7 @@
 [![Merged PRs][prs-merged-image]][prs-merged-url]
 [![GitHub contributors][contributors-image]][contributors-url]
 [![license][license-image]][license-url]
+[![Mastodon][mastodon-image]][mastodon-url]
 
 [github-actions-url]: https://github.com/tldr-pages/tldr/actions
 [github-actions-image]: https://img.shields.io/github/actions/workflow/status/tldr-pages/tldr/ci.yml?branch=main&label=Build
@@ -18,6 +19,8 @@
 [contributors-image]: https://img.shields.io/github/contributors-anon/tldr-pages/tldr.svg?label=Contributors
 [license-url]: https://github.com/tldr-pages/tldr/blob/main/LICENSE.md
 [license-image]: https://img.shields.io/badge/license-CC_BY_4.0-blue.svg?label=License
+[mastodon-url]: https://fosstodon.org/@tldr_pages
+[mastodon-image]: https://img.shields.io/badge/Mastodon-6364FF?logo=mastodon&logoColor=fff
 </div>
 
 ## What is tldr-pages?
@@ -43,11 +46,14 @@ $ man tar
 There seems to be room for simpler help pages, focused on practical examples.
 How about:
 
-![Screenshot of the tldr client displaying the tar command in light mode.](images/tldr-light.png#gh-light-mode-only)
-![Screenshot of the tldr client displaying the tar command in dark mode.](images/tldr-dark.png#gh-dark-mode-only)
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/tldr-pages/tldr/blob/main/images/tldr-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/tldr-pages/tldr/blob/main/images/tldr-light.png">
+    <img alt="Screenshot of the tldr client displaying the tar command." src="https://github.com/tldr-pages/tldr/blob/main/images/tldr-dark.png">
+</picture>
 
 This repository is just that: an ever-growing collection of examples
-for the most common UNIX, Linux, macOS, SunOS, Android and Windows command-line tools.
+for the most common UNIX, Linux, macOS, SunOS, Android, and Windows command-line tools.
 
 ## How do I use it?
 
@@ -85,7 +91,7 @@ If you don't want to install any software, check out the [PDF version](https://g
 
 There are also **various other clients** provided by the community,
 both for the command-line and for other platforms.
-For a comprehensive list of clients, head over to our [Wiki](https://github.com/tldr-pages/tldr/wiki/tldr-pages-clients).
+For a comprehensive list of clients, head over to our [Wiki](https://github.com/tldr-pages/tldr/wiki/Clients).
 
 ## How do I contribute to tldr-pages?
 
@@ -93,7 +99,7 @@ All contributions are welcome!
 
 Some ways to contribute include:
 
-- Adding your favorite command which isn't covered.
+- Adding your favorite command that isn't covered.
 - Adding examples or improving the content of an existing page.
 - Adding requested pages from our issues with the [help wanted](https://github.com/tldr-pages/tldr/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) label.
 - Translating pages into different languages.
@@ -113,11 +119,11 @@ You are also welcome to join us on the [matrix chatroom](https://matrix.to/#/#tl
 ## Similar projects
 
 - [Command Line Interface Pages](https://github.com/command-line-interface-pages)
-  allows you to write standardized help pages for CLI, directories and configs.
+  allows you to write standardized help pages for CLI, directories, and configs.
 
 - [Cheat](https://github.com/cheat/cheat)
   allows you to create and view interactive cheatsheets on the command-line.
-  It was designed to help remind *nix system administrators of options
+  It was designed to help remind Unix system administrators of options
   for commands that they use frequently, but not frequently enough to remember.
 
 - [cheat.sh](https://cheat.sh/)
