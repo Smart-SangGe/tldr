@@ -1,13 +1,13 @@
 # http
 
-> HTTPie: an HTTP client designed for testing, debugging, and generally interacting with APIs & HTTP servers.
+> HTTPie: an HTTP client designed for testing, debugging, and generally interacting with APIs and HTTP servers.
 > More information: <https://httpie.io/docs/cli/usage>.
 
-- Make a simple GET request (shows response header and content):
+- Make a simple GET request (shows response headers and content):
 
-`http {{https://example.org}}`
+`http {{https://example.com}}`
 
-- Print specific output content (`H`: request headers, `B`: request body, `h`: response headers, `b`: response body, `m`: response metadata):
+- Print specific parts of the content (`H`: request headers, `B`: request body, `h`: response headers, `b`: response body, `m`: response metadata):
 
 `http --print {{H|B|h|b|m|Hh|Hhb|...}} {{https://example.com}}`
 
@@ -17,7 +17,7 @@
 
 - Follow any `3xx` redirects and specify additional headers in a request:
 
-`http {{-F|--follow}} {{https://example.com}} {{'User-Agent: Mozilla/5.0' 'Accept-Encoding: gzip'}}`
+`http {{[-F|--follow]}} {{https://example.com}} {{'User-Agent: Mozilla/5.0' 'Accept-Encoding: gzip'}}`
 
 - Authenticate to a server using different authentication methods:
 
